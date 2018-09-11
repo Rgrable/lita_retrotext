@@ -79,8 +79,8 @@ module Lita
         for i in a do
           text = i.text.delete(" ").strip
           if text == "Large"
-            puts(i['href'])
-            url = i['href']
+            puts(i['href'].split("?")[0])
+            url = i['href'].split("?")[0]
           end
         end
 
