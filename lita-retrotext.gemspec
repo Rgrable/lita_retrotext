@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "lita-retrotext"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.authors       = ["Richard Grable"]
   spec.email         = ["richard.grable@gmail.com"]
   spec.description   = "Generates a retro text image"
