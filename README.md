@@ -1,6 +1,6 @@
 # lita-retrotext
 
-This plugin allows you to create text images from the retro-wave effect from [photofunia](https://photofunia.com/effects/retro-wave?redirect=false).
+This plugin allows you to create text images from the retro-wave effect found on [photofunia](https://photofunia.com/effects/retro-wave?redirect=false).
 
 ## Installation
 
