@@ -35,7 +35,6 @@ module Lita
         top = response.matches.first[0].tr("_", " ")
         middle = response.matches.first[1].tr("_", " ")
         bottom = response.matches.first[2].tr("_", " ")
-        puts("generating image with top text: #{top} | middle text: #{middle} | bottom text: #{bottom}")
         server = rand(9) + 1
         uri_prefix = "http://photofunia.com"
         uri_string = "#{uri_prefix}/categories/all_effects/retro-wave?server=#{server}"
@@ -44,7 +43,6 @@ module Lita
         tries = 0
 
         loop do
-            puts(uri_string)
             uri = URI.parse(uri_string)
             res = Net::HTTP.post_form(
                 uri,
@@ -79,7 +77,6 @@ module Lita
         for i in a do
           text = i.text.delete(" ").strip
           if text == "Large"
-            puts(i['href'].split("?")[0])
             url = i['href'].split("?")[0]
           end
         end
