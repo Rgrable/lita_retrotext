@@ -47,8 +47,8 @@ module Lita
             res = Net::HTTP.post_form(
                 uri,
                 "current-category" => "all_effects",
-                "bcg" => 5,
-                "txt" => 4,
+                "bcg" => rand(4) + 1,
+                "txt" => rand(3) + 1,
                 "text1" => top,
                 "text2" => middle,
                 "text3" => bottom
@@ -66,7 +66,6 @@ module Lita
           end
 
         url = extract_url(res.body)
-
         response.reply("#{url}")
       end
 
